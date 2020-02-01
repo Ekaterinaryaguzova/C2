@@ -1,5 +1,5 @@
 const form = document.querySelector('.forma')
-
+console.log("func")
 function setCookie(name, value, options = {}) {
 	console.log("ok")
   options = {
@@ -22,5 +22,6 @@ function setCookie(name, value, options = {}) {
 
   document.cookie = updatedCookie;
   console.log(name=value)
-}form.addEventListener("submit", function(){ 
-	console.log(form.elements.value.value)})
+}
+console.log("popopopopo")
+form.addEventListener("submit", function(){ console.log(form.elements.value.value)})
