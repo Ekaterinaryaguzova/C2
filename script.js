@@ -24,4 +24,5 @@ function setCookie(name, value, options = {}) {
   document.cookie = updatedCookie;
   console.log(name=value)
 }
-sub.addEventListener("onclick", setCookie("city", city, {secure: true, 'max-age': 120}))
+let setCook = setCookie("city", city, {secure: true, 'max-age': 120})
+sub.addEventListener("onclick", setCook)
