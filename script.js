@@ -4,6 +4,7 @@ function setCookie(name, value, options = {}) {
 	console.log("ok")
   options = {
     path: '/',
+    max-age: 3600,
   };
 
   if (options.expires.toUTCString) {
@@ -23,4 +24,4 @@ function setCookie(name, value, options = {}) {
   document.cookie = updatedCookie;
   console.log(name=value, document.cookie)
 }
-sub.addEventListener("submit", function(){ console.log(city.value, "last")})
+sub.addEventListener("submit", function(){setCookie("User", "KAT", secure })
