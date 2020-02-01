@@ -21,7 +21,7 @@ function setCookie(name, value, options = {}) {
   }
 
   document.cookie = updatedCookie;
-  console.log(name=value)
+  console.log(name=value, document.cookie)
 }
 console.log("popopopopo")
 form.addEventListener("submit", function(){ console.log(form.elements.value.value)})
