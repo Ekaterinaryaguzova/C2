@@ -1,8 +1,7 @@
-const sub = document.querySelector('.submit')
-const city = document.querySelector('.city')
+const form = document.querySelector('.forma')
 
 function setCookie(name, value, options = {}) {
-
+	console.log("ok")
   options = {
     path: '/',
   };
@@ -25,4 +24,4 @@ function setCookie(name, value, options = {}) {
   console.log(name=value)
 }
 sub.addEventListener("submit", function(){ 
-	setCookie("city", city, {secure: true, 'max-age': 120}) })
+	console.log(form.elements.value.value)})
